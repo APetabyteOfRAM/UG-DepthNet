@@ -1,0 +1,732 @@
+<?xml version="1.0" ?>
+<robot name="hand_urdf">
+
+<material name="silver">
+  <color rgba="0.700 0.700 0.700 1.000"/>
+</material>
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="7.67151758420166e-18 0.020613076923076918 2.1918621669147595e-18" rpy="0 0 0"/>
+    <mass value="0.12723793858735147"/>
+    <inertia ixx="5.83125013777399e-05" iyy="7.417115410440445e-05" izz="5.8312501377741936e-05" ixy="-3.2362809867855993e-21" iyz="-7.324135827738805e-21" ixz="2.509992214072554e-20"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="roll_mount_v3_1">
+  <inertial>
+    <origin xyz="4.902036832716327e-18 -0.00358731464829193 -5.172609688619013e-07" rpy="0 0 0"/>
+    <mass value="0.057171952716038525"/>
+    <inertia ixx="1.0724294508180227e-05" iyy="1.604105624132186e-05" izz="1.3661522217779174e-05" ixy="-9.632077720130188e-21" iyz="-6.479155981462885e-10" ixz="-5.396297255645283e-21"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/roll_mount_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/roll_mount_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="3dof_link_v3_1">
+  <inertial>
+    <origin xyz="-0.012501007569997447 -0.01248051111687394 -1.099978665549902e-06" rpy="0 0 0"/>
+    <mass value="0.2190513883977172"/>
+    <inertia ixx="4.878435686950228e-05" iyy="2.1567777943709372e-05" izz="4.8782437895564896e-05" ixy="-3.975403540888505e-09" iyz="-1.3361367560523011e-09" ixz="-7.419182655409622e-14"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0125 0.021163 8e-06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/3dof_link_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0125 0.021163 8e-06" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/3dof_link_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="palm_v15_1">
+  <inertial>
+    <origin xyz="0.0636831572680068 -0.021023235461609724 0.020352748519255903" rpy="0 0 0"/>
+    <mass value="1.0842981495386774"/>
+    <inertia ixx="0.0009660798364865266" iyy="0.003311827801677933" izz="0.002616565759043314" ixy="-0.0001943818595748735" iyz="-4.322062188574132e-05" ixz="-0.00031129336614017203"/>
+  </inertial>
+  <visual>
+    <origin xyz="5e-06 0.046139 0.012509" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/palm_v15_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="5e-06 0.046139 0.012509" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/palm_v15_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Two_Pip_v3_1">
+  <inertial>
+    <origin xyz="0.017149115417409294 0.0044647852196258025 0.007545434185566913" rpy="0 0 0"/>
+    <mass value="0.04433435606559081"/>
+    <inertia ixx="2.516721124079383e-06" iyy="1.199198128406533e-05" izz="1.1986574816703422e-05" ixy="-1.4430710920301099e-06" iyz="-4.4051116681242605e-08" ixz="8.995143458426702e-08"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.128329 0.067015 -0.044091" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Two_Pip_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.128329 0.067015 -0.044091" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Two_Pip_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Two_Mip_v3_1">
+  <inertial>
+    <origin xyz="0.03232726319551196 0.016294129241037215 -0.036248912572725674" rpy="0 0 0"/>
+    <mass value="0.03803020017060857"/>
+    <inertia ixx="6.436662632708387e-05" iyy="5.4780189326477605e-05" izz="5.916986932337498e-05" ixy="-2.55218768889134e-05" iyz="3.068078924495017e-05" ixz="2.55109177183834e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.167942 0.06428 -0.058091" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Two_Mip_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.167942 0.06428 -0.058091" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Two_Mip_v3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Finger_Tip_v1_1">
+  <inertial>
+    <origin xyz="-0.0015503976109235151 -0.02029135940462791 0.0024995638900678144" rpy="0 0 0"/>
+    <mass value="0.033241134652794525"/>
+    <inertia ixx="3.652194680828463e-06" iyy="8.311943927171665e-07" izz="3.937895611284218e-06" ixy="-7.049413163236337e-07" iyz="2.7923437216983982e-14" ixz="2.428271342683197e-14"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.186123 0.094108 -0.049091" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Finger_Tip_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.186123 0.094108 -0.049091" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Finger_Tip_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Two_Pip_v3_2">
+  <inertial>
+    <origin xyz="0.01746432145907037 0.005674792107288232 -0.007454565829334393" rpy="0 0 0"/>
+    <mass value="0.04433435606559081"/>
+    <inertia ixx="2.5167211240792746e-06" iyy="1.1991981284065114e-05" izz="1.1986574816703205e-05" ixy="-1.4430710920302725e-06" iyz="-4.4051116681242605e-08" ixz="8.995143458423991e-08"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.141099 0.060163 -0.031791" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Two_Pip_v3_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.141099 0.060163 -0.031791" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Two_Pip_v3_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Two_Mip_v3_2">
+  <inertial>
+    <origin xyz="-0.12089953506854902 0.011957638943754054 -0.008564433293171825" rpy="0 0 0"/>
+    <mass value="0.03803020017060857"/>
+    <inertia ixx="3.4536509343401667e-05" iyy="0.0005375688788129267" izz="0.0005551278725152321" ixy="0.00011451652818724916" iyz="1.3401805138987385e-05" ixz="-6.249560442207107e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.181027 0.056218 -0.017791" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Two_Mip_v3_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.181027 0.056218 -0.017791" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Two_Mip_v3_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Finger_Tip_v1_2">
+  <inertial>
+    <origin xyz="-0.02000108952769597 -0.0037538195925257145 0.002499563875166342" rpy="0 0 0"/>
+    <mass value="0.033241134652794525"/>
+    <inertia ixx="6.676949218170159e-07" iyy="3.81569415172818e-06" izz="3.937895611283784e-06" ixy="-9.47529839144404e-08" iyz="-1.6228243250072938e-14" ixz="3.325681743882036e-14"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.199208 0.086046 -0.021791" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Finger_Tip_v1_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.199208 0.086046 -0.021791" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Finger_Tip_v1_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Two_Pip_v3_3">
+  <inertial>
+    <origin xyz="0.01714946898944797 0.004465106979801271 -0.0074545658293346945" rpy="0 0 0"/>
+    <mass value="0.04433435606559081"/>
+    <inertia ixx="2.5167211240793017e-06" iyy="1.199198128406533e-05" izz="1.1986574816703205e-05" ixy="-1.443071092030164e-06" iyz="-4.405111668122905e-08" ixz="8.995143458423229e-08"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.140995 0.060163 -0.006791" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Two_Pip_v3_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.140995 0.060163 -0.006791" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Two_Pip_v3_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Two_Mip_v3_3">
+  <inertial>
+    <origin xyz="-0.1206750897207998 0.012608634995669901 0.004882892060710752" rpy="0 0 0"/>
+    <mass value="0.03803020017060857"/>
+    <inertia ixx="2.8379448847994343e-05" iyy="0.0005283725023437511" izz="0.0005544317570347617" ixy="0.00011701076427975818" iyz="1.4726538380615974e-06" ixz="-6.695143146257e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.180609 0.057428 0.007209" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Two_Mip_v3_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.180609 0.057428 0.007209" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Two_Mip_v3_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Finger_Tip_v1_3">
+  <inertial>
+    <origin xyz="-0.02000194199731825 -0.00375450472001268 0.00249956387516606" rpy="0 0 0"/>
+    <mass value="0.033241134652794525"/>
+    <inertia ixx="6.676949218170701e-07" iyy="3.815694151728614e-06" izz="3.937895611284001e-06" ixy="-9.47529839144404e-08" iyz="-1.622823774435878e-14" ixz="3.325682506211689e-14"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.19879 0.087255 0.003209" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Finger_Tip_v1_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.19879 0.087255 0.003209" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Finger_Tip_v1_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Two_Pip_v3_4">
+  <inertial>
+    <origin xyz="0.018138085782602176 0.005229270416844768 0.00754543418556702" rpy="0 0 0"/>
+    <mass value="0.04433435606559081"/>
+    <inertia ixx="2.516721124079329e-06" iyy="1.1991981284065222e-05" izz="1.1986574816703422e-05" ixy="-1.4430710920301099e-06" iyz="-4.4051116681242605e-08" ixz="8.995143458426702e-08"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.123329 0.067015 0.031509" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Two_Pip_v3_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.123329 0.067015 0.031509" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Two_Pip_v3_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Two_Mip_v3_4">
+  <inertial>
+    <origin xyz="-0.1117038250062922 0.015883403191246953 0.01741579929741562" rpy="0 0 0"/>
+    <mass value="0.03803020017060857"/>
+    <inertia ixx="3.8503513756444824e-05" iyy="0.000460509121250159" izz="0.0004890765689458137" ixy="0.00012144066052964238" iyz="-1.1111688106410399e-05" ixz="4.200811690443035e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.163931 0.063516 0.030509" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Two_Mip_v3_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.163931 0.063516 0.030509" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Two_Mip_v3_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Finger_Tip_v1_4">
+  <inertial>
+    <origin xyz="-0.02000132520416406 -0.003754341282969198 0.0024995638900677415" rpy="0 0 0"/>
+    <mass value="0.033241134652794525"/>
+    <inertia ixx="6.676949218169617e-07" iyy="3.8156941517282885e-06" izz="3.937895611283784e-06" ixy="-9.47529839144404e-08" iyz="-1.6228243250072938e-14" ixz="3.3256844543874675e-14"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.182112 0.093343 0.026509" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Finger_Tip_v1_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.182112 0.093343 0.026509" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Finger_Tip_v1_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Two_Pip_v3_5">
+  <inertial>
+    <origin xyz="0.00034969288753799663 -0.0170844791631114 0.008808977284770404" rpy="0 0 0"/>
+    <mass value="0.04433435606559081"/>
+    <inertia ixx="1.1223309007340207e-05" iyy="3.6357999389106997e-06" izz="1.1636168278596334e-05" ixy="2.9004171128540655e-06" iyz="1.7390751113787644e-06" ixz="-5.237968239020079e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.02737 0.104411 0.043766" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Two_Pip_v3_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.02737 0.104411 0.043766" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Two_Pip_v3_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Two_Mip_v3_5">
+  <inertial>
+    <origin xyz="-0.044012454320836635 0.0658731736590958 0.022684825485536957" rpy="0 0 0"/>
+    <mass value="0.03803020017060857"/>
+    <inertia ixx="0.00013132298543133133" iyy="0.00010404212398099626" izz="0.00022721198072987318" ixy="0.00011191539984947779" iyz="-1.8184827022846094e-05" ixz="1.5604897071608825e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.041972 0.140085 0.034181" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Two_Mip_v3_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.041972 0.140085 0.034181" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Two_Mip_v3_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Finger_Tip_v1_5">
+  <inertial>
+    <origin xyz="0.014109502474352678 0.00998134177570334 0.011032146227787046" rpy="0 0 0"/>
+    <mass value="0.033241134652794525"/>
+    <inertia ixx="2.3907680638972145e-06" iyy="2.6083301747380813e-06" izz="3.422186446194091e-06" ixy="-1.3281654503544105e-06" iyz="-7.668166412516778e-07" ixz="-8.932344909094065e-07"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.070162 0.13787 0.013286" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Finger_Tip_v1_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+    <material/>
+  </visual>
+  <collision>
+    <origin xyz="-0.070162 0.13787 0.013286" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="meshes/Finger_Tip_v1_5.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rev16" type="continuous">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="roll_mount_v3_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+<transmission name="Rev16_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev16">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev16_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev17" type="continuous">
+  <origin xyz="0.0125 -0.021163 -8e-06" rpy="0 0 0"/>
+  <parent link="roll_mount_v3_1"/>
+  <child link="3dof_link_v3_1"/>
+  <axis xyz="-1.0 -0.0 0.0"/>
+</joint>
+<transmission name="Rev17_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev17">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev17_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev18" type="continuous">
+  <origin xyz="-0.012505 -0.024976 -0.012501" rpy="0 0 0"/>
+  <parent link="3dof_link_v3_1"/>
+  <child link="palm_v15_1"/>
+  <axis xyz="-0.0 0.0 -1.0"/>
+</joint>
+<transmission name="Rev18_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev18">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev18_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev1" type="continuous">
+  <origin xyz="0.128334 -0.020876 0.0566" rpy="0 0 0"/>
+  <parent link="palm_v15_1"/>
+  <child link="Two_Pip_v3_1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+</joint>
+<transmission name="Rev1_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev1">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev1_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev2" type="continuous">
+  <origin xyz="0.039613 0.002735 0.014" rpy="0 0 0"/>
+  <parent link="Two_Pip_v3_1"/>
+  <child link="Two_Mip_v3_1"/>
+  <axis xyz="0.0 -0.0 -1.0"/>
+</joint>
+<transmission name="Rev2_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev2">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev2_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev3" type="continuous">
+  <origin xyz="0.018181 -0.029828 -0.009" rpy="0 0 0"/>
+  <parent link="Two_Mip_v3_1"/>
+  <child link="Finger_Tip_v1_1"/>
+  <axis xyz="0.0 -0.0 -1.0"/>
+</joint>
+<transmission name="Rev3_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev3">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev3_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev4" type="continuous">
+  <origin xyz="0.141104 -0.014024 0.0443" rpy="0 0 0"/>
+  <parent link="palm_v15_1"/>
+  <child link="Two_Pip_v3_2"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+</joint>
+<transmission name="Rev4_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev4">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev4_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev5" type="continuous">
+  <origin xyz="0.039928 0.003945 -0.014" rpy="0 0 0"/>
+  <parent link="Two_Pip_v3_2"/>
+  <child link="Two_Mip_v3_2"/>
+  <axis xyz="-0.0 0.0 1.0"/>
+</joint>
+<transmission name="Rev5_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev5">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev5_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev6" type="continuous">
+  <origin xyz="0.018181 -0.029828 0.004" rpy="0 0 0"/>
+  <parent link="Two_Mip_v3_2"/>
+  <child link="Finger_Tip_v1_2"/>
+  <axis xyz="0.0 -0.0 -1.0"/>
+</joint>
+<transmission name="Rev6_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev6">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev6_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev7" type="continuous">
+  <origin xyz="0.141 -0.014024 0.0193" rpy="0 0 0"/>
+  <parent link="palm_v15_1"/>
+  <child link="Two_Pip_v3_3"/>
+  <axis xyz="-0.0 0.0 -1.0"/>
+</joint>
+<transmission name="Rev7_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev7">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev7_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev8" type="continuous">
+  <origin xyz="0.039614 0.002735 -0.014" rpy="0 0 0"/>
+  <parent link="Two_Pip_v3_3"/>
+  <child link="Two_Mip_v3_3"/>
+  <axis xyz="-0.0 0.0 1.0"/>
+</joint>
+<transmission name="Rev8_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev8">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev8_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev9" type="continuous">
+  <origin xyz="0.018181 -0.029827 0.004" rpy="0 0 0"/>
+  <parent link="Two_Mip_v3_3"/>
+  <child link="Finger_Tip_v1_3"/>
+  <axis xyz="0.0 -0.0 -1.0"/>
+</joint>
+<transmission name="Rev9_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev9">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev9_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev10" type="continuous">
+  <origin xyz="0.123334 -0.020876 -0.019" rpy="0 0 0"/>
+  <parent link="palm_v15_1"/>
+  <child link="Two_Pip_v3_4"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+</joint>
+<transmission name="Rev10_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev10">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev10_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev11" type="continuous">
+  <origin xyz="0.040602 0.003499 0.001" rpy="0 0 0"/>
+  <parent link="Two_Pip_v3_4"/>
+  <child link="Two_Mip_v3_4"/>
+  <axis xyz="-0.0 0.0 1.0"/>
+</joint>
+<transmission name="Rev11_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev11">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev11_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev12" type="continuous">
+  <origin xyz="0.018181 -0.029827 0.004" rpy="0 0 0"/>
+  <parent link="Two_Mip_v3_4"/>
+  <child link="Finger_Tip_v1_4"/>
+  <axis xyz="-0.0 -0.0 -1.0"/>
+</joint>
+<transmission name="Rev12_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev12">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev12_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev13" type="continuous">
+  <origin xyz="0.027375 -0.058272 -0.031257" rpy="0 0 0"/>
+  <parent link="palm_v15_1"/>
+  <child link="Two_Pip_v3_5"/>
+  <axis xyz="0.5 0.0 -0.866025"/>
+</joint>
+<transmission name="Rev13_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev13">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev13_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev14" type="continuous">
+  <origin xyz="0.014602 -0.035674 0.009585" rpy="0 0 0"/>
+  <parent link="Two_Pip_v3_5"/>
+  <child link="Two_Mip_v3_5"/>
+  <axis xyz="-0.5 -0.0 0.866025"/>
+</joint>
+<transmission name="Rev14_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev14">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev14_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<joint name="Rev15" type="continuous">
+  <origin xyz="0.02819 0.002215 0.020895" rpy="0 0 0"/>
+  <parent link="Two_Mip_v3_5"/>
+  <child link="Finger_Tip_v1_5"/>
+  <axis xyz="0.5 0.0 -0.866025"/>
+</joint>
+<transmission name="Rev15_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev15">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev15_actr">
+    <hardwareInterface>PositionJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>
